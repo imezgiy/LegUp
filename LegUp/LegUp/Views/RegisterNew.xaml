@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LegUp.Views.RegisterNew"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:renderers="clr-namespace:LegUp.Renderers">
+    <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout Background="#FFDE59">
+            <StackLayout  Margin="0,0,0,0"  Orientation="Horizontal">
+                <StackLayout Margin="20,10,20,0" Spacing="20">
+                    <Image
+                    HeightRequest="30"
+                    HorizontalOptions="Start"
+                    Source="close"
+                    VerticalOptions="Start"
+                    WidthRequest="30" />
+                   
+                </StackLayout>
+                <Image Source="kayitol" WidthRequest="300" />
+            </StackLayout>
+            <yummy:PancakeView
+            Margin="0,-30,0,0"
+            Padding="30,20,30,30"
+            BackgroundColor="White"
+            CornerRadius="40,40,0,0"
+            VerticalOptions="FillAndExpand">
+                <StackLayout Spacing="10">
+                    <StackLayout Spacing="10">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Adın"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                            
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtName"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Soyadın"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                            
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtSurname"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+                            
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Email"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                            
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtEmail"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Kullanıcı Adın"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                            
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtUsername"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Parolan"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                            
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtPassword"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Cinsiyetin"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <Picker x:Name="txtGender"
+                                    FontSize="10">
+                                <Picker.Items>
+                                    <x:String>Erkek</x:String>
+                                    <x:String>Kadın</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <!--<renderers:BorderlessEntry
+                            FontSize="20"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />-->
+
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Üniversiten"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessSelect
+                                x:Name="universitySelect"
+                                ItemDisplayBinding ="{Binding Title}"
+                                SelectedItem="{Binding Id}"
+                            FontSize="10"
+                            TextColor="Black"
+                                />
+
+                        </yummy:PancakeView>
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Bölümün"
+                        TextColor="#30533F" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="40">
+                            <renderers:BorderlessEntry
+                                x:Name="txtDepartment"
+                            FontSize="10"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            TextColor="Black"
+                                />
+
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    
+                    <yummy:PancakeView
+                    >
+                        <Button
+                            CornerRadius="10"
+                            Background="#FFDE59"
+                            x:Name="registerBtn"
+                            Clicked="registerBtn_Clicked"
+                        FontAttributes="Bold"
+                        FontSize="10"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Kayıt Ol"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" >
+                            
+                        </Button>
+                    </yummy:PancakeView>
+                    
+                    
+                    
+                </StackLayout>
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegUp.Android", "LegUp\LegUp.Android\LegUp.Android.csproj", "{E952AE0C-2BAB-4185-AACC-96337D21964C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegUp", "LegUp\LegUp\LegUp.csproj", "{51F38838-40DC-47D0-B5F0-A482053FBD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{07AFA20D-82F7-4B1B-AD1A-9F2AF7526D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{8DD2B347-6613-49D1-9B52-1DC41831D602}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E952AE0C-2BAB-4185-AACC-96337D21964C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F38838-40DC-47D0-B5F0-A482053FBD7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{07AFA20D-82F7-4B1B-AD1A-9F2AF7526D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AFA20D-82F7-4B1B-AD1A-9F2AF7526D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AFA20D-82F7-4B1B-AD1A-9F2AF7526D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AFA20D-82F7-4B1B-AD1A-9F2AF7526D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD2B347-6613-49D1-9B52-1DC41831D602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD2B347-6613-49D1-9B52-1DC41831D602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD2B347-6613-49D1-9B52-1DC41831D602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD2B347-6613-49D1-9B52-1DC41831D602}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {107EEF6A-73F1-48E4-A339-2DAA22E6ABD1}
+	EndGlobalSection
+EndGlobal

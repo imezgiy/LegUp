@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LegUp.Views.StudentPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:renderers="clr-namespace:LegUp.Renderers"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="#C2DFCD"
+    NavigationPage.HasNavigationBar="False">
+    <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Aspect="Fill"
+                    Source="kiz2"
+                    Grid.Row="0"
+                    HeightRequest="360"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
+
+                <Grid Grid.Column="1" Margin="10,30,30,0">
+                    <Button x:Name="logoutBtn" 
+                            Clicked="logoutBtn_Clicked"  
+                            Grid.Column="0" CornerRadius="20" 
+                            TextColor="#30533F" Background="#FFDE59" Text="Çıkış Yap" HeightRequest="40"  VerticalOptions="Start"></Button>
+
+                </Grid>
+            </Grid>
+            <yummy:PancakeView
+                Margin="0,-30,0,0"
+                Padding="20,0,30,20"
+                BackgroundColor="white"
+                CornerRadius="40,40,0,0"
+                VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Label
+                        Margin="20"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="Hoşgeldin"
+                        x:Name="welcomeText"
+                        TextColor="#30533F"
+                        VerticalOptions="Center" />
+                    <Grid  ColumnSpacing="20" RowSpacing="40">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150" />
+                            <RowDefinition Height="150" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <yummy:PancakeView
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="#FFDE59"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand">
+                                <Image Source="im1" />
+                                <Button
+                                    x:Name="helpBtn"
+                                    FontAttributes="Bold"
+                                    FontSize="Subtitle"
+                                    HorizontalOptions="CenterAndExpand"
+                                    BackgroundColor="#FFDE59"
+                                    Text="Yardım Et"
+                                    TextColor="#9260D2"
+                                    VerticalOptions="CenterAndExpand" 
+                                    Clicked="helpBtn_Clicked"
+                                    />
+                            </StackLayout>
+                        </yummy:PancakeView>
+                        <yummy:PancakeView
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Padding="10"
+                            BackgroundColor="#FFDE59"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand">
+                                <Image Source="im2" />
+                                <Button
+                                    x:Name="seekHelpBtn"
+                                    FontAttributes="Bold"
+                                    FontSize="Subtitle"
+                                    HorizontalOptions="CenterAndExpand"
+                                    BackgroundColor="#FFDE59"
+                                    Text="Yardım İste"
+                                    TextColor="#9260D2"
+                                    VerticalOptions="CenterAndExpand" 
+                                    Clicked="seekHelpBtn_Clicked"
+                                    />
+
+                            </StackLayout>
+                        </yummy:PancakeView>
+                        <yummy:PancakeView
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Padding="10"
+                            BackgroundColor="#FFDE59"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand">
+                                <Image Source="im3" />
+                                <Button
+                                    x:Name="profileBtn"
+                                    FontAttributes="Bold"
+                                    FontSize="Subtitle"
+                                    HorizontalOptions="CenterAndExpand"
+                                    BackgroundColor="#FFDE59"
+                                    Text="Profilini Görüntüle"
+                                    TextColor="#9260D2"
+                                    VerticalOptions="CenterAndExpand" 
+                                    Clicked="profileBtn_Clicked"
+                                    />
+                            </StackLayout>
+                        </yummy:PancakeView>
+                        <yummy:PancakeView
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Padding="10"
+                            BackgroundColor="#FFDE59"
+                            BorderThickness="1"
+                            CornerRadius="15"
+                            Elevation="3">
+                            <StackLayout
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand">
+                                <Image Source="im4" />
+                                <Button
+                                    FontAttributes="Bold"
+                                    FontSize="Subtitle"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Text="Teklifleri Görüntüle"
+                                    x:Name="chatBtn"
+                                    Clicked="chatBtn_Clicked"
+                                    BackgroundColor="#FFDE59"
+                                    TextColor="#9260D2"
+                                    VerticalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </yummy:PancakeView>
+                    </Grid>
+                </StackLayout>
+
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

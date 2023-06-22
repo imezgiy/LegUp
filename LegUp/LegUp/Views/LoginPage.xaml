@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="LegUp.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <Grid Background="#CFFFEC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" VerticalOptions="FillAndExpand">
+            <Image 
+        HorizontalOptions="FillAndExpand" 
+        VerticalOptions="FillAndExpand" 
+        Source="giris2" 
+        WidthRequest="300" 
+        HeightRequest="200" />
+        </Grid>
+
+        <yummy:PancakeView
+                Margin="0,-60,0,0"
+                Grid.Row="1"
+                Padding="20,0,30,30"
+                BackgroundColor="White"
+                CornerRadius="40,40,0,0"
+                VerticalOptions="FillAndExpand">
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1" Margin="20">
+                    <Label HeightRequest="40" Text="Kullanıcı Adı" TextColor="#30533F" FontSize="18" FontFamily="NormalFont"  VerticalOptions="Center" />
+                    <Entry x:Name="txtUserName" BackgroundColor="White" HeightRequest="40" FontSize="15" FontFamily="NormalFont" Placeholder="Kullanıcı Adını Gir" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Margin="20">
+                    <Label HeightRequest="40" Text="Parola" TextColor="#30533F" FontSize="18" FontFamily="comic.ttf" VerticalOptions="Center" />
+                    <Entry x:Name="txtPassword" BackgroundColor="White" HeightRequest="40" FontFamily="NormalFont" FontSize="15" Placeholder="Parolanı Gir" IsPassword="True" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Margin="20">
+                    <Button x:Name="LoginBtn" Clicked="btnLogin_Clicked" Text="GİRİŞ Yap"  FontSize="18" BackgroundColor="#FFDE59" TextColor="#30533F" CornerRadius="20" HeightRequest="40" />
+                    <Button x:Name="RegisterBtn" Clicked="RegisterBtn_Clicked" Text="Kayıt Ol" FontSize="18" FontFamily="NormalFont" BackgroundColor="#FFDE59" TextColor="#30533F" CornerRadius="20" HeightRequest="40" />
+
+                </StackLayout>
+
+
+
+
+
+            </Grid>
+
+        </yummy:PancakeView>
+    </Grid>
+</ContentPage>
